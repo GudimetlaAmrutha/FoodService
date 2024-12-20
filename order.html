@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delivery Website</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Dashboard Sidebar Styling */
+        .dashboard {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 10px;
+            color: #fff;
+        }
+
+        .dashboard a {
+            text-decoration: none;
+            color: #fff;
+            margin: 15px 0;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .dashboard a:hover {
+            background-color: #575757;
+            color: #ff9800;
+        }
+
+        .dashboard .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .dashboard .logo img {
+            max-width: 150px;
+        }
+
+        /* Main Content Section */
+        .main-content {
+            margin-left: 270px; /* Adjust this to make room for the sidebar */
+            padding: 20px;
+        }
+
+        /* Food Order Section */
+        .order {
+            margin-left: 270px; /* Ensure this section doesn't overlap with the sidebar */
+            padding: 20px;
+        }
+
+        /* Footer Section Styling */
+        .footer .container {
+            text-align: center; /* Center the content */
+        }
+
+        .social {
+            display: flex;
+            justify-content: center; /* Center the icons horizontally */
+            gap: 20px; /* Add space between icons */
+            margin-top: 20px;
+        }
+
+        .social a img {
+            width: 48px;
+            height: 48px;
+        }
+
+        /* Adjustments for Cart */
+        .cart-content {
+            position: absolute;
+            top: 50px;
+            left: -250px;
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+            transition: left 0.3s ease;
+        }
+
+        .shopping-cart:hover .cart-content {
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Dashboard Sidebar Start -->
+    <div class="dashboard">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="foods.html">Foods</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+    </div>
+    <!-- Dashboard Sidebar End -->
+
+    <!-- Main Content Section Start -->
+    <div class="main-content">
+        <h1>Food Delivery Service</h1>
+    </div>
+
+    <!-- Order Section Start -->
+    <section class="order">
+        <div class="container">
+            <h2 class="text-center">Fill this form to confirm your order.</h2>
+            <table class="tbl-full" border="0">
+                <tr>
+                    <th>S.N.</th>
+                    <th>Food</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="img/food/p1.jpg" alt="Food"></td>
+                    <td>Pizza</td>
+                    <td>$ 8.00</td>
+                    <td>1</td>
+                    <td>$ 8.00</td>
+                    <td><a href="#" class="btn-delete">&times;</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="img/food/s1.jpg" alt="Food"></td>
+                    <td>Sandwich</td>
+                    <td>$ 8.00</td>
+                    <td>1</td>
+                    <td>$ 8.00</td>
+                    <td><a href="#" class="btn-delete">&times;</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="img/food/b1.jpg" alt="Food"></td>
+                    <td>Burger</td>
+                    <td>$ 8.00</td>
+                    <td>1</td>
+                    <td>$ 8.00</td>
+                    <td><a href="#" class="btn-delete">&times;</a></td>
+                </tr>
+                <tr>
+                    <th colspan="5">Total</th>
+                    <th>$24.00</th>
+                    <th></th>
+                </tr>
+            </table>
+            <form action="" class="form">
+                <fieldset>
+                    <legend>Delivery Details</legend>
+                    <p class="label">Full Name</p>
+                    <input type="text" placeholder="Enter your name..." required>
+                    <p class="label">Phone Number</p>
+                    <input type="contact" placeholder="Enter your phone..." required>
+                    <p class="label">Email</p>
+                    <input type="email" placeholder="Enter your email..." required>
+                    <p class="label">Address</p>
+                    <input type="text" placeholder="Enter your address..." required>
+                    <input type="submit" value="Confirm Order" class="btn-primary">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <!-- Order Section End -->
+
+    <!-- Footer Section Start -->
+    <section class="footer">
+        <div class="container">
+           
+            <div class="social">
+                <a href="#"><img src="https://img.icons8.com/color/48/facebook-new.png"/></a>
+                <a href="#"><img src="https://img.icons8.com/fluency/48/instagram-new.png"/></a>
+                <a href="#"><img src="https://img.icons8.com/color/48/twitter--v1.png"/></a>
+                <a href="#"><img src="https://img.icons8.com/color/48/linkedin-circled--v1.png"/></a>
+                <a href="#"><img src="https://img.icons8.com/color/48/youtube-play.png"/></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Copyright Section Start -->
+    <section class="copyright">
+        <div class="container text-center">
+            <p>All rights reserved. Design By <a href="#">Code Arcade</a></p>
+        </div>
+        <a id="back-to-top" class="btn-primary">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+    </section>
+    <!-- Copyright Section End -->
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- Jquery UI -->
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+</body>
+</html>

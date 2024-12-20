@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delivery Website</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Dashboard Sidebar Styling */
+        .dashboard {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 10px;
+            color: #fff;
+        }
+
+        .dashboard a {
+            text-decoration: none;
+            color: #fff;
+            margin: 15px 0;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .dashboard a:hover {
+            background-color: #575757;
+            color: #ff9800;
+        }
+
+        .dashboard .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .dashboard .logo img {
+            max-width: 150px;
+        }
+
+        /* Main content adjustment */
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+
+        /* Contact Section Styling */
+        .contact {
+            margin-left: 270px; /* Adjusted to make room for the sidebar */
+            padding: 20px;
+        }
+
+        .contact .form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact .form input, .contact .form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact .form input[type="submit"] {
+            background-color: #ff9800;
+            color: white;
+            cursor: pointer;
+        }
+
+        .contact .form input[type="submit"]:hover {
+            background-color: #e68900;
+        }
+
+        /* Footer Section Styling */
+        .footer .container {
+            text-align: center;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social a img {
+            width: 48px;
+            height: 48px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Dashboard Sidebar Start -->
+    <div class="dashboard">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="foods.html">Foods</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+    </div>
+    <!-- Dashboard Sidebar End -->
+
+    <!-- Contact Section Start -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="text-center">Get in touch</h2>
+            <div class="heading-border"></div>
+
+            <form action="" class="form">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <p class="label">Full Name</p>
+                    <input type="text" placeholder="Enter your name..." required>
+                    <p class="label">Email</p>
+                    <input type="email" placeholder="Enter your email..." required>
+                    <p class="label">Phone Number</p>
+                    <input type="contact" placeholder="Enter your phone..." required>
+                    <p class="label">Subject</p>
+                    <input type="text" placeholder="Enter your subject..." required>
+                    <p class="label">Message</p>
+                    <textarea name="" id="" rows="5" placeholder="Enter your message..." required></textarea>
+                    <input type="submit" value="Submit" class="btn-primary">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <section class="footer">
+        <div class="container">
+           
+            <div class="social">
+                <a href="#"><img src="https://img.icons8.com/color/48/facebook-new.png"/></a>
+                <a href="#"><img src="https://img.icons8.com/fluency/48/instagram-new.png"/></a>
+                <a href="#"><img src="https://img.icons8.com/color/48/twitter--v1.png"/></a>
+                <a href="#"><img src="https://img.icons8.com/color/48/linkedin-circled--v1.png"/></a>
+                <a href="#"><img src="https://img.icons8.com/color/48/youtube-play.png"/></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Copyright Section start -->
+    <section class="copyright">
+        <div class="container text-center">
+            <p>All rights reserved. Design By <a href="#">Code Arcade</a></p>
+        </div>
+        <a id="back-to-top" class="btn-primary">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+    </section>
+    <!-- Copyright Section End -->
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- Jquery UI -->
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+</body>
+</html>
